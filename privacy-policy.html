@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AppWebCity Privacy Policy and account deletion information.">
+  <meta name="color-scheme" content="light">
+  <title>AppWebCity Privacy Policy</title>
+  <style>
+    :root {
+      --background: #f7f1e8;
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-soft: #fbf7f1;
+      --text: #2f2924;
+      --muted: #746a61;
+      --accent: #bd8959;
+      --accent-dark: #7a5131;
+      --border: #eadfd2;
+      --shadow: 0 18px 50px rgba(92, 65, 42, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(189, 137, 89, 0.13), transparent 34rem),
+        var(--background);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 72px;
+    }
+
+    .hero,
+    .policy {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: clamp(28px, 6vw, 58px);
+      margin-bottom: 22px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent-dark);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 3.7rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .pill,
+    .language-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 7px 13px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface-soft);
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-decoration: none;
+    }
+
+    .language-link {
+      color: var(--accent-dark);
+      font-weight: 700;
+    }
+
+    .policy {
+      padding: clamp(24px, 5vw, 48px);
+      margin-top: 22px;
+    }
+
+    .language-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.55rem, 4vw, 2.2rem);
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      margin: 34px 0 10px;
+      font-size: 1.14rem;
+      line-height: 1.4;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 1.3rem;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    .notice {
+      margin: 24px 0;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 16px 16px 0;
+      background: var(--surface-soft);
+    }
+
+    .notice strong {
+      color: var(--accent-dark);
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .service {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface-soft);
+    }
+
+    .service strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .service span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .contact {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: var(--accent-dark);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact:hover {
+      color: white;
+      background: var(--accent);
+    }
+
+    footer {
+      padding: 28px 12px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.86rem;
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 10px;
+      }
+
+      .hero,
+      .policy {
+        border-radius: 20px;
+      }
+
+      .language-heading {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .page {
+        width: 100%;
+        padding: 0;
+      }
+
+      .hero,
+      .policy {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .language-link {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Privacy &amp; Data</p>
+      <h1>AppWebCity<br>Privacy Policy</h1>
+      <p class="hero-copy">
+        This policy explains how AppWebCity handles account information, app-library data,
+        analytics, local notes, documents, and attachments across supported platforms.
+      </p>
+      <div class="meta">
+        <span class="pill">Effective July 13, 2026</span>
+        <a class="language-link" href="#english">English</a>
+        <a class="language-link" href="#简体中文" lang="zh-CN">简体中文</a>
+      </div>
+    </header>
+
+    <article class="policy" id="english">
+      <div class="language-heading">
+        <h2>English</h2>
+        <a class="language-link" href="#简体中文" lang="zh-CN">阅读中文版</a>
+      </div>
+
+      <h3>1. Scope and privacy contact</h3>
+      <p>
+        This Privacy Policy applies to AppWebCity on Android and iOS. In this policy,
+        “AppWebCity,” “we,” “us,” and “our” refer to the AppWebCity developer. Features and
+        sign-in methods may differ by platform and app version.
+      </p>
+      <p>
+        For privacy questions or requests, contact
+        <a href="mailto:bangruifang@gmail.com">bangruifang@gmail.com</a>.
+      </p>
+
+      <h3>2. Information handled by AppWebCity</h3>
+      <p><strong>Account information.</strong> If you create or use an account, we may process your email address, display name, profile photo, a Firebase user identifier, and authentication tokens. Depending on platform and app version, sign-in options may include email, Google, Facebook, or Apple.</p>
+      <p><strong>App-library information.</strong> We process the apps and services you add, including their names, links, package identifiers or URL schemes, categories, custom spaces, favorites, ordering, and usage counters. When you are signed in, this app-library information may be synchronized through Firebase so it is available on your other devices.</p>
+      <p><strong>Search information.</strong> Search terms may be sent to the Apple iTunes Search API to return app names, icons, and related metadata. Please avoid entering personal or sensitive information as a search term.</p>
+      <p><strong>Analytics and technical information.</strong> Firebase Analytics may process app interactions, app-instance or device identifiers, device type, operating-system version, app version, and related technical information. We use this information to understand feature usage and improve reliability. AppWebCity does not display third-party advertising and does not sell personal information.</p>
+
+      <div class="notice">
+        <strong>Local notes, documents, and attachments</strong>
+        <p>
+          Notes and documents you create, together with photos, PDFs, scanned pages, and
+          annotated images you select or generate, are stored in the app’s private storage on
+          your device. AppWebCity does not upload this content to Firebase or our servers and
+          does not use it for advertising or analytics.
+        </p>
+      </div>
+
+      <h3>3. Device-only and user-controlled access</h3>
+      <ul>
+        <li><strong>Installed apps on Android:</strong> At your request, AppWebCity can read the names, package names, and icons of launchable apps installed on your device. The complete installed-app list stays on your device. Apps you choose to add become part of your app library and may be synchronized when you are signed in.</li>
+        <li><strong>Photos and files:</strong> AppWebCity uses system pickers so you choose the specific photo, image, or PDF the App may access.</li>
+        <li><strong>Document scanning:</strong> Scanning is provided by Google Play services and is processed on-device. AppWebCity receives only the pages you confirm and return from the scanner.</li>
+        <li><strong>Voice input:</strong> If you choose voice input, AppWebCity requests microphone access and passes speech to the speech-recognition service selected on your device. AppWebCity does not retain the raw audio recording. Your speech-recognition provider may process audio under its own privacy terms.</li>
+      </ul>
+      <p>
+        Depending on your operating-system and device settings, app-private local content may
+        be included in a device backup or restored during device migration. Those backups are
+        controlled by your operating-system or backup provider, not by AppWebCity.
+      </p>
+
+      <h3>4. How we use information</h3>
+      <ul>
+        <li>Provide app organization, custom spaces, notes, documents, search, and related features.</li>
+        <li>Authenticate users, protect accounts, and send sign-in or password-reset messages.</li>
+        <li>Synchronize signed-in users’ app libraries between devices.</li>
+        <li>Understand feature usage, troubleshoot problems, and improve AppWebCity.</li>
+        <li>Prevent abuse and comply with applicable legal obligations.</li>
+      </ul>
+
+      <h3>5. Service providers</h3>
+      <p>AppWebCity uses the following providers where the relevant feature is available:</p>
+      <div class="service-list">
+        <div class="service">
+          <strong>Firebase / Google LLC</strong>
+          <span>Authentication, Firestore app-library synchronization, and analytics.</span><br>
+          <a href="https://firebase.google.com/support/privacy">Privacy information</a>
+        </div>
+        <div class="service">
+          <strong>Google</strong>
+          <span>Google sign-in, Google Play services, document scanning, and device speech services where selected.</span><br>
+          <a href="https://policies.google.com/privacy">Privacy Policy</a>
+        </div>
+        <div class="service">
+          <strong>Meta Platforms, Inc.</strong>
+          <span>Facebook Login on supported versions.</span><br>
+          <a href="https://www.facebook.com/privacy/policy">Privacy Policy</a>
+        </div>
+        <div class="service">
+          <strong>Apple Inc.</strong>
+          <span>Sign in with Apple on supported versions and iTunes Search for app metadata.</span><br>
+          <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>
+        </div>
+      </div>
+
+      <h3>6. Data sharing, sale, and international processing</h3>
+      <p>
+        We do not sell personal information. We share information only with service providers
+        as needed to provide the features described above, when you direct us to do so, when
+        required by law, or when reasonably necessary to protect users, AppWebCity, or the public.
+        Firebase and other providers may process information in countries outside your country
+        of residence, subject to their safeguards and privacy terms.
+      </p>
+
+      <h3 id="delete-account">7. Retention and account deletion</h3>
+      <p>
+        Account information and synchronized app-library information are retained while your
+        account is active or as needed to provide the service. You can permanently delete your
+        account and associated cloud app-library data from the AppWebCity profile/settings screen
+        by selecting <strong>Delete account</strong>. You may also email us at
+        <a href="mailto:bangruifang@gmail.com">bangruifang@gmail.com</a> for assistance; we aim to
+        respond to verified requests within 30 business days.
+      </p>
+      <p>
+        Local notes, documents, and attachments are not part of your Firebase account. You can
+        delete them in the App. Uninstalling AppWebCity removes its app-private local storage,
+        subject to any device backup or restore settings controlled by your operating system.
+      </p>
+
+      <h3>8. Your choices and rights</h3>
+      <p>
+        Depending on where you live, you may have rights to access, correct, delete, or obtain a
+        copy of personal information, or to object to or restrict certain processing. You may
+        withdraw optional permissions in system settings and may use AppWebCity locally as a guest
+        where that option is available. Contact us to exercise an applicable privacy right.
+      </p>
+
+      <h3>9. Children’s privacy</h3>
+      <p>
+        AppWebCity is not directed to children under 13 or the applicable minimum age in their
+        jurisdiction. We do not knowingly collect personal information from children below that
+        age. If you believe a child has provided personal information, contact us so we can take
+        appropriate action.
+      </p>
+
+      <h3>10. Security and policy updates</h3>
+      <p>
+        We use reasonable technical and organizational safeguards, including encrypted network
+        transport and Firebase access controls. No storage or transmission method is completely
+        secure. We may update this policy when AppWebCity’s features or legal obligations change.
+        The effective date at the top of this page identifies the latest version.
+      </p>
+
+      <h3>11. Contact us</h3>
+      <p>Questions, account-deletion assistance, and privacy requests can be sent to:</p>
+      <a class="contact" href="mailto:bangruifang@gmail.com">bangruifang@gmail.com</a>
+    </article>
+
+    <article class="policy" id="简体中文" lang="zh-CN">
+      <div class="language-heading">
+        <h2>简体中文</h2>
+        <a class="language-link" href="#english">Read in English</a>
+      </div>
+
+      <h3>1. 适用范围与隐私联系方式</h3>
+      <p>
+        本隐私政策适用于 Android 和 iOS 平台上的 AppWebCity。本政策中的“AppWebCity”“我们”或“我们的”指 AppWebCity 开发者。不同平台和应用版本提供的功能与登录方式可能有所不同。
+      </p>
+      <p>
+        如有隐私问题或请求，请发送邮件至
+        <a href="mailto:bangruifang@gmail.com">bangruifang@gmail.com</a>。
+      </p>
+
+      <h3>2. AppWebCity 处理的信息</h3>
+      <p><strong>账户信息：</strong>当您创建或使用账户时，我们可能会处理您的电子邮箱、显示名称、头像、Firebase 用户标识符以及身份验证令牌。根据平台和应用版本，登录方式可能包括邮箱、Google、Facebook 或 Apple。</p>
+      <p><strong>App 库信息：</strong>我们会处理您主动添加的 App 和服务，包括名称、链接、应用包名或 URL Scheme、分类、自定义空间、收藏状态、排序和使用次数。当您登录账户后，这些 App 库信息可能通过 Firebase 同步，以便在您的其他设备上使用。</p>
+      <p><strong>搜索信息：</strong>搜索词可能会发送至 Apple iTunes Search API，用于返回 App 名称、图标及相关元数据。请不要在搜索框中输入个人信息或敏感信息。</p>
+      <p><strong>分析与技术信息：</strong>Firebase Analytics 可能会处理应用交互、应用实例或设备标识符、设备类型、操作系统版本、应用版本及相关技术信息。我们使用这些信息了解功能使用情况并改善稳定性。AppWebCity 不展示第三方广告，也不出售个人信息。</p>
+
+      <div class="notice">
+        <strong>本地备忘录、文档与附件</strong>
+        <p>
+          您创建的备忘录和文档，以及您主动选择或生成的照片、PDF、扫描页和标注图片，保存在设备的应用专属存储中。AppWebCity 不会将这些内容上传至 Firebase 或我们的服务器，也不会将其用于广告或分析。
+        </p>
+      </div>
+
+      <h3>3. 仅在设备端或由用户控制的访问</h3>
+      <ul>
+        <li><strong>Android 已安装 App：</strong>在您主动操作时，AppWebCity 可以读取设备上可启动 App 的名称、包名和图标。完整的已安装 App 列表仅保留在设备上；您主动添加的 App 会成为 App 库的一部分，并可能在登录后同步。</li>
+        <li><strong>照片与文件：</strong>AppWebCity 使用系统选择器，由您决定允许访问的具体照片、图片或 PDF。</li>
+        <li><strong>文档扫描：</strong>扫描功能由 Google Play 服务提供并在设备端处理。AppWebCity 只接收您确认并从扫描器返回的页面。</li>
+        <li><strong>语音输入：</strong>当您主动使用语音输入时，AppWebCity 会请求麦克风权限，并把语音交给设备上选定的语音识别服务。AppWebCity 不保留原始录音；语音识别服务提供方可能依据其隐私条款处理音频。</li>
+      </ul>
+      <p>
+        根据操作系统和设备设置，应用专属的本地内容可能包含在设备备份中，或在更换设备时恢复。这类备份由操作系统或备份服务提供方控制，并非由 AppWebCity 控制。
+      </p>
+
+      <h3>4. 信息使用方式</h3>
+      <ul>
+        <li>提供 App 整理、自定义空间、备忘录、文档、搜索及相关功能。</li>
+        <li>验证用户身份、保护账户并发送登录或密码重置邮件。</li>
+        <li>在已登录用户的多台设备之间同步 App 库。</li>
+        <li>了解功能使用情况、排查问题并改善 AppWebCity。</li>
+        <li>防止滥用并履行适用的法律义务。</li>
+      </ul>
+
+      <h3>5. 第三方服务提供方</h3>
+      <p>当相关功能可用时，AppWebCity 会使用以下服务：</p>
+      <div class="service-list">
+        <div class="service">
+          <strong>Firebase / Google LLC</strong>
+          <span>身份验证、Firestore App 库同步及分析。</span><br>
+          <a href="https://firebase.google.com/support/privacy">隐私信息</a>
+        </div>
+        <div class="service">
+          <strong>Google</strong>
+          <span>Google 登录、Google Play 服务、文档扫描，以及用户选择的设备语音服务。</span><br>
+          <a href="https://policies.google.com/privacy">隐私政策</a>
+        </div>
+        <div class="service">
+          <strong>Meta Platforms, Inc.</strong>
+          <span>受支持版本中的 Facebook 登录。</span><br>
+          <a href="https://www.facebook.com/privacy/policy">隐私政策</a>
+        </div>
+        <div class="service">
+          <strong>Apple Inc.</strong>
+          <span>受支持版本中的 Apple 登录，以及用于 App 元数据查询的 iTunes Search。</span><br>
+          <a href="https://www.apple.com/legal/privacy/">隐私政策</a>
+        </div>
+      </div>
+
+      <h3>6. 数据共享、出售与跨境处理</h3>
+      <p>
+        我们不出售个人信息。我们仅在提供上述功能所必需时与服务提供方共享信息，或根据您的指示、法律要求，以及为合理保护用户、AppWebCity 或公众安全而共享。Firebase 及其他服务提供方可能在您居住国家或地区以外处理信息，并适用其安全保障和隐私条款。
+      </p>
+
+      <h3 id="删除账户">7. 数据保留与账户删除</h3>
+      <p>
+        账户信息和同步的 App 库信息会在您的账户处于有效状态期间保留，或在提供服务所需的期限内保留。您可以在 AppWebCity 的个人资料/设置页面选择<strong>“删除账号”</strong>，永久删除账户以及关联的云端 App 库数据。您也可以发送邮件至
+        <a href="mailto:bangruifang@gmail.com">bangruifang@gmail.com</a> 寻求帮助；我们会尽量在验证请求后的 30 个工作日内答复。
+      </p>
+      <p>
+        本地备忘录、文档和附件不属于 Firebase 账户数据。您可以在应用中删除这些内容。卸载 AppWebCity 会移除应用专属的本地存储，但仍取决于操作系统控制的设备备份和恢复设置。
+      </p>
+
+      <h3>8. 您的选择与权利</h3>
+      <p>
+        根据您所在地区的法律，您可能有权访问、更正、删除或获取个人信息副本，也可能有权反对或限制某些处理。您可以在系统设置中撤回非必要权限；在提供访客模式的版本中，也可以仅在本地使用 AppWebCity。如需行使适用的隐私权利，请联系我们。
+      </p>
+
+      <h3>9. 未成年人隐私</h3>
+      <p>
+        AppWebCity 不面向 13 周岁以下儿童，或当地法律规定的最低年龄以下人群。我们不会有意收集低于相应年龄儿童的个人信息。如果您认为儿童向我们提供了个人信息，请联系我们，以便采取适当措施。
+      </p>
+
+      <h3>10. 数据安全与政策更新</h3>
+      <p>
+        我们采取合理的技术和组织安全措施，包括加密的网络传输和 Firebase 访问控制。但任何存储或传输方式都无法保证绝对安全。当 AppWebCity 功能或法律义务发生变化时，我们可能更新本政策。页面顶部的生效日期表示最新版本。
+      </p>
+
+      <h3>11. 联系我们</h3>
+      <p>如有疑问、账户删除协助或隐私请求，请发送邮件至：</p>
+      <a class="contact" href="mailto:bangruifang@gmail.com">bangruifang@gmail.com</a>
+    </article>
+
+    <footer>
+      © 2026 AppWebCity · This page does not use cookies or third-party analytics.
+    </footer>
+  </main>
+</body>
+</html>
