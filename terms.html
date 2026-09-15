@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AppWebCity Terms of Service, including Docs Pro subscription terms.">
+  <meta name="color-scheme" content="light">
+  <title>AppWebCity Terms of Service</title>
+  <style>
+    :root {
+      --background: #f7f1e8;
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-soft: #fbf7f1;
+      --text: #2f2924;
+      --muted: #746a61;
+      --accent: #bd8959;
+      --accent-dark: #7a5131;
+      --border: #eadfd2;
+      --shadow: 0 18px 50px rgba(92, 65, 42, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(189, 137, 89, 0.13), transparent 34rem),
+        var(--background);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 72px;
+    }
+
+    .hero,
+    .policy {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: clamp(28px, 6vw, 58px);
+      margin-bottom: 22px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent-dark);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 3.7rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .pill,
+    .language-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 7px 13px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface-soft);
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-decoration: none;
+    }
+
+    .language-link {
+      color: var(--accent-dark);
+      font-weight: 700;
+    }
+
+    .policy {
+      padding: clamp(24px, 5vw, 48px);
+      margin-top: 22px;
+    }
+
+    .language-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.55rem, 4vw, 2.2rem);
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      margin: 34px 0 10px;
+      font-size: 1.14rem;
+      line-height: 1.4;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 1.3rem;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    .notice {
+      margin: 24px 0;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 16px 16px 0;
+      background: var(--surface-soft);
+    }
+
+    .notice strong {
+      color: var(--accent-dark);
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .service {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface-soft);
+    }
+
+    .service strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .service span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .contact {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: var(--accent-dark);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact:hover {
+      color: white;
+      background: var(--accent);
+    }
+
+    footer {
+      padding: 28px 12px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.86rem;
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 10px;
+      }
+
+      .hero,
+      .policy {
+        border-radius: 20px;
+      }
+
+      .language-heading {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .page {
+        width: 100%;
+        padding: 0;
+      }
+
+      .hero,
+      .policy {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .language-link {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Terms of Service</p>
+      <h1>AppWebCity<br>Terms of Service</h1>
+      <p class="hero-copy">
+        These terms cover your use of the AppWebCity app, including the Docs Pro
+        subscription sold through Google Play. English and Simplified Chinese
+        versions are provided; the English version governs.
+      </p>
+      <div class="meta">
+        <span class="pill">Effective 2026-09-15</span>
+        <a class="language-link" href="#en">English</a>
+        <a class="language-link" href="#zh">简体中文</a>
+        <a class="language-link" href="https://lyixin466.github.io/appwebcity-privacy/privacy-policy.html">Privacy Policy &rarr;</a>
+      </div>
+    </header>
+
+    <section class="policy" id="en">
+      <div class="language-heading">
+        <h2>AppWebCity Terms of Service</h2>
+        <a class="language-link" href="#zh">简体中文 &rarr;</a>
+      </div>
+
+      <h3>1. Acceptance of These Terms</h3>
+      <p>These Terms of Service (the &ldquo;Terms&rdquo;) govern your use of the AppWebCity mobile application (the &ldquo;App&rdquo;). By installing or using the App you agree to these Terms. If you do not agree, please do not use the App.</p>
+      <p>The App is operated by Stonevally International Investment Corporation, 536 Front Rd N, Amherstburg, ON N9V 2V5, Canada (&ldquo;we&rdquo;, &ldquo;us&rdquo;).</p>
+
+      <h3>2. The Service</h3>
+      <p>AppWebCity provides a home-screen launcher, a document workspace (&ldquo;Docs&rdquo;) and related tools. Some features are free. Some features require a paid subscription, described in section 4.</p>
+      <p>We may add, change or remove features over time. If we materially reduce what a paid subscription includes, we will give notice in the App before the change takes effect for you.</p>
+
+      <h3>3. Your Account</h3>
+      <p>Some features require an account. You may create one with an email address, or sign in with Google, Facebook or TikTok. You are responsible for keeping access to your account secure, and for activity that happens under it.</p>
+      <p>You may delete your account at any time from within the App. Deleting your account does not by itself cancel a subscription bought through Google Play &mdash; see section 4.</p>
+
+      <h3>4. Docs Pro Subscription</h3>
+      <p>Docs Pro is an optional auto-renewing subscription. It is sold and billed by Google Play, not by us.</p>
+      <ul>
+        <li><strong>Price.</strong> The price is shown in the App and in the Google Play purchase dialog before you confirm, in your local currency. That displayed price governs.</li>
+        <li><strong>Billing period.</strong> Docs Pro is billed monthly. Payment is charged to your Google Play account when you confirm the purchase and at the start of each renewal period.</li>
+        <li><strong>Automatic renewal.</strong> The subscription renews automatically unless you cancel it at least 24 hours before the end of the current period.</li>
+        <li><strong>How to cancel.</strong> Cancel in Google Play (Play Store &rarr; Subscriptions), or through the link provided in the App. Cancelling stops future charges; your Docs Pro access continues until the end of the period you have already paid for.</li>
+        <li><strong>Refunds.</strong> Refunds are handled by Google under the Google Play refund policy. We cannot issue refunds for a Google Play purchase directly, but if something has gone wrong, contact us and we will help you resolve it.</li>
+        <li><strong>One account.</strong> A subscription is bound to the first AppWebCity account that registers it, and that binding does not transfer to another account. A single subscription cannot be shared between accounts.</li>
+        <li><strong>Payment problems.</strong> If a renewal payment fails, Google may place the subscription in a grace period or on hold. Docs Pro access follows the state Google reports.</li>
+        <li><strong>After a subscription ends.</strong> Documents you already created remain yours and remain editable. Features reserved for Docs Pro, and the limits that apply to free use, return to their free-tier behaviour.</li>
+      </ul>
+
+      <h3>5. Your Content</h3>
+      <p>Documents, notes and files you create in the App are yours. We do not claim ownership of them and we do not use them to train models or to advertise to you.</p>
+      <p>You are responsible for what you create and store, and for having the right to use any material you import into the App.</p>
+
+      <h3>6. Acceptable Use</h3>
+      <p>Do not use the App to break the law, to infringe someone else&rsquo;s rights, or to distribute malware. Do not attempt to circumvent paid features, interfere with the App&rsquo;s security, or access other users&rsquo; data.</p>
+      <p>We may suspend or terminate access that violates these Terms.</p>
+
+      <h3>7. Third-Party Services</h3>
+      <p>The App relies on services operated by others, including Google Play for billing, Firebase for authentication and data storage, and the sign-in providers listed in section 3. Your use of those services is also subject to their own terms and privacy policies. We are not responsible for their availability or their acts.</p>
+
+      <h3>8. Privacy</h3>
+      <p>Our handling of personal information is described in the <a href="https://lyixin466.github.io/appwebcity-privacy/privacy-policy.html">AppWebCity Privacy Policy</a>, which forms part of these Terms.</p>
+
+      <h3>9. Disclaimer</h3>
+      <p>The App is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;. To the extent permitted by law, we disclaim implied warranties of merchantability, fitness for a particular purpose and non-infringement. We do not warrant that the App will be uninterrupted or error-free.</p>
+      <p>Keep your own backups of anything you cannot afford to lose.</p>
+
+      <h3>10. Limitation of Liability</h3>
+      <p>To the extent permitted by law, we are not liable for indirect, incidental, special or consequential damages, or for lost data or lost profits. Our total liability arising out of or relating to the App is limited to the amount you paid us for the subscription in the twelve months before the event giving rise to the claim.</p>
+      <p>Nothing in these Terms limits rights you have under consumer protection law that cannot be limited by agreement.</p>
+
+      <h3>11. Changes to These Terms</h3>
+      <p>We may update these Terms. The effective date at the top of this page shows when the current version took effect. If a change materially affects a paid subscription, we will give notice in the App. Continuing to use the App after a change takes effect means you accept the updated Terms.</p>
+
+      <h3>12. Termination</h3>
+      <p>You may stop using the App at any time and delete your account from within it. We may suspend or end access if these Terms are violated, or if we discontinue the App. If we discontinue a paid subscription entirely, we will give notice and stop future billing.</p>
+
+      <h3>13. Governing Law</h3>
+      <p>These Terms are governed by the laws of the Province of Ontario and the federal laws of Canada applicable there, without regard to conflict-of-laws rules. This does not deprive you of the protection of mandatory consumer law in your country of residence.</p>
+
+      <h3>14. Contact Us</h3>
+      <p>Questions about these Terms:</p>
+      <p>Email: lyixin466@gmail.com</p>
+      <p>Stonevally International Investment Corporation<br>536 Front Rd N, Amherstburg, ON N9V 2V5, Canada</p>
+      <a class="contact" href="mailto:lyixin466@gmail.com">Email us</a>
+
+    </section>
+
+    <section class="policy" id="zh">
+      <div class="language-heading">
+        <h2>AppWebCity 服务条款</h2>
+        <a class="language-link" href="#en">English &rarr;</a>
+      </div>
+      <div class="notice">
+        <strong>说明:</strong>中文版仅供参考。中英文有歧义时,以英文版为准。
+      </div>
+
+      <h3>1. 条款的接受</h3>
+      <p>本服务条款(以下称&ldquo;本条款&rdquo;)适用于你对 AppWebCity 移动应用(以下称&ldquo;本应用&rdquo;)的使用。安装或使用本应用即表示你同意本条款。若不同意,请不要使用本应用。</p>
+      <p>本应用的运营方为 Stonevally International Investment Corporation,地址:536 Front Rd N, Amherstburg, ON N9V 2V5, Canada(以下称&ldquo;我们&rdquo;)。</p>
+
+      <h3>2. 服务说明</h3>
+      <p>AppWebCity 提供桌面启动器、文档工作区(Docs)及相关工具。部分功能免费;部分功能需要付费订阅,详见第 4 节。</p>
+      <p>我们可能会增加、修改或移除功能。若付费订阅所含内容出现实质性缩减,我们会在变更对你生效前于应用内告知。</p>
+
+      <h3>3. 你的账号</h3>
+      <p>部分功能需要账号。你可以用邮箱注册,也可以用 Google、Facebook 或 TikTok 登录。你有责任妥善保管账号,并对账号下发生的行为负责。</p>
+      <p>你可以随时在应用内删除账号。<strong>但删除账号本身并不会取消你通过 Google Play 购买的订阅</strong>,取消方式见第 4 节。</p>
+
+      <h3>4. Docs Pro 订阅</h3>
+      <p>Docs Pro 是可选的自动续订订阅,由 Google Play 销售并收款,不由我们直接收款。</p>
+      <ul>
+        <li><strong>价格。</strong>价格在应用内以及 Google Play 购买弹窗中以你所在地区的货币显示,以确认购买前显示的价格为准。</li>
+        <li><strong>计费周期。</strong>Docs Pro 按月计费。确认购买时以及此后每个续订周期开始时,款项从你的 Google Play 账号扣除。</li>
+        <li><strong>自动续订。</strong>除非你在当前周期结束前至少 24 小时取消,订阅将自动续订。</li>
+        <li><strong>如何取消。</strong>在 Google Play 中取消(Play 商店 &rarr; 订阅),或通过应用内提供的链接前往。取消后不再产生新的扣费;已付费周期内的 Docs Pro 权益保留至该周期结束。</li>
+        <li><strong>退款。</strong>退款由 Google 按 Google Play 退款政策处理。我们无法直接为 Google Play 的购买退款,但如果出了问题,请联系我们,我们会协助你处理。</li>
+        <li><strong>一个订阅对应一个账号。</strong>订阅绑定到首个登记它的 AppWebCity 账号,且该绑定不会转移到其它账号。一个订阅不能在多个账号间共用。</li>
+        <li><strong>付款问题。</strong>若续订扣款失败,Google 可能将订阅置于宽限期或账号保留状态。Docs Pro 权益以 Google 返回的状态为准。</li>
+        <li><strong>订阅结束之后。</strong>你已经创建的文档仍然属于你,并且仍可继续编辑。Docs Pro 专属功能与免费版限额将恢复为免费版的行为。</li>
+      </ul>
+
+      <h3>5. 你的内容</h3>
+      <p>你在应用内创建的文档、笔记与文件归你所有。我们不主张其所有权,不用于训练模型,也不用于向你投放广告。</p>
+      <p>你对自己创建和存储的内容负责,并应确保你有权使用导入应用的任何素材。</p>
+
+      <h3>6. 使用规范</h3>
+      <p>不得利用本应用从事违法活动、侵害他人权利或传播恶意软件。不得试图绕过付费功能、干扰应用安全机制或访问其他用户的数据。</p>
+      <p>对违反本条款的使用,我们可能暂停或终止其访问权限。</p>
+
+      <h3>7. 第三方服务</h3>
+      <p>本应用依赖他方运营的服务,包括用于计费的 Google Play、用于身份验证与数据存储的 Firebase,以及第 3 节所列的登录服务商。你对这些服务的使用同时受其各自条款与隐私政策约束。我们不对其可用性或其行为负责。</p>
+
+      <h3>8. 隐私</h3>
+      <p>我们对个人信息的处理方式见 <a href="https://lyixin466.github.io/appwebcity-privacy/privacy-policy.html">AppWebCity 隐私政策</a>,该政策构成本条款的一部分。</p>
+
+      <h3>9. 免责声明</h3>
+      <p>本应用按&ldquo;现状&rdquo;和&ldquo;现有&rdquo;提供。在法律允许的范围内,我们不作适销性、特定用途适用性及不侵权的默示担保,也不保证应用不中断或无错误。</p>
+      <p>对于你无法承受丢失的内容,请自行保留备份。</p>
+
+      <h3>10. 责任限制</h3>
+      <p>在法律允许的范围内,我们不对间接、附带、特殊或后果性损害,或数据丢失、利润损失承担责任。因本应用产生或与之相关的全部责任,以索赔事由发生前十二个月内你就订阅向我们支付的金额为限。</p>
+      <p>本条款不限制你依消费者保护法享有的、不得以约定排除的权利。</p>
+
+      <h3>11. 条款变更</h3>
+      <p>我们可能更新本条款。页面顶部的生效日期表示当前版本的生效时间。若变更对付费订阅有实质影响,我们会在应用内告知。变更生效后你继续使用本应用,即表示接受更新后的条款。</p>
+
+      <h3>12. 终止</h3>
+      <p>你可以随时停止使用本应用,并在应用内删除账号。若本条款被违反,或我们停止提供本应用,我们可能暂停或终止访问。若我们完全停止某项付费订阅,将提前告知并停止后续扣费。</p>
+
+      <h3>13. 管辖法律</h3>
+      <p>本条款受加拿大安大略省法律及在该省适用的加拿大联邦法律管辖,不适用其冲突法规则。本条不剥夺你在居住国依强制性消费者法律享有的保护。</p>
+
+      <h3>14. 联系我们</h3>
+      <p>关于本条款的问题,请联系:</p>
+      <p>电子邮件:lyixin466@gmail.com</p>
+      <p>Stonevally International Investment Corporation<br>536 Front Rd N, Amherstburg, ON N9V 2V5, Canada</p>
+      <a class="contact" href="mailto:lyixin466@gmail.com">发送邮件</a>
+
+    </section>
+
+    <footer>
+      Stonevally International Investment Corporation &middot; 536 Front Rd N, Amherstburg, ON N9V 2V5, Canada
+      <br>Effective 2026-09-15
+    </footer>
+  </main>
+</body>
+</html>
