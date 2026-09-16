@@ -301,7 +301,6 @@
           <li>Device type and operating system version</li>
           <li>App version number</li>
           <li>Crash reports, analytics, and diagnostic data used to improve app stability</li>
-          <li>Advertising ID, where available, after consent to analytics collection where required by applicable law</li>
         </ul>
         <p><strong>Authentication Tokens</strong></p>
         <ul>
@@ -309,6 +308,8 @@
         </ul>
       <h3>Installed App Information</h3>
         <p>To help you organize apps, AppWebCity can, at your request, read the names, package names, and icons of apps installed on your device for display and categorization. This information is used only on this device and is not uploaded to any server. This refers to the raw list of installed apps. Entries you actively add to AppWebCity (including their name, package name or web address) sync with your account once you sign in; nothing syncs if you are not signed in.</p>
+      <h3>Location for Regional Recommendations</h3>
+        <p>If you allow approximate location, AppWebCity uses it once to infer an ISO country code for the initial regional recommendations default. Only that two-letter code is stored, it stays on your device, and we do not upload it. We do not retain precise coordinates or location history. To turn the location into a country code, your device asks Android&#x27;s geocoding service, which on most phones sends the approximate coordinates to Google; we never receive or store them. You may deny permission or choose a city manually at any time; a manual city choice always takes priority.</p>
       <h3>Clipboard</h3>
         <p>When you return to the home screen, AppWebCity checks whether the clipboard contains a web address, so it can offer to save it as a bookmark. This happens only while the app is in the foreground, the clipboard content is never uploaded, and we only keep the last address we offered so that we do not ask about the same link twice. You can ignore the prompt; nothing is saved unless you tap it.</p>
       <h3>Purchases and Subscriptions</h3>
@@ -451,7 +452,6 @@
           <li>设备类型与操作系统版本</li>
           <li>应用版本号</li>
           <li>用于改善应用稳定性的崩溃报告、分析和诊断信息</li>
-          <li>在适用法律要求同意时，经您同意分析收集后，可能使用设备广告 ID（如设备提供）</li>
         </ul>
         <p><strong>（四）认证令牌</strong></p>
         <ul>
@@ -459,6 +459,8 @@
         </ul>
       <h3>本机已安装应用信息</h3>
         <p>为帮助你整理 App，AppWebCity 可在你的操作下读取本机已安装应用的名称、包名和图标用于展示与分类；该信息仅在本设备使用，不会上传服务器。这里指的是原始安装列表。你主动添加到 AppWebCity 的条目(包含名称、包名或网址)在你登录后会随账号同步;未登录则完全不同步。</p>
+      <h3>用于地区推荐的定位</h3>
+        <p>如您允许粗略位置权限，AppWebCity 仅会使用一次定位推断 ISO 国家代码，用于首次地区推荐的默认值。我们只存储这个两位代码，它仅保存在本设备上，我们不会上传它。我们不会保留精确坐标或位置历史。把位置换算成国家代码时，设备会调用 Android 的地理编码服务，在多数手机上这会把大致坐标发送给 Google；我们不会收到也不会存储这些坐标。您可拒绝权限，或随时手动选择城市；手动城市选择始终优先。</p>
       <h3>剪贴板</h3>
         <p>回到首页时,AppWebCity 会检查剪贴板里是否是一个网址,以便询问你要不要收藏。这只在应用处于前台时发生,剪贴板内容不会上传;我们只记住上次询问过的那个网址,避免对同一个链接反复打扰。你可以忽略该提示,不点击就什么都不会保存。</p>
       <h3>购买与订阅</h3>
